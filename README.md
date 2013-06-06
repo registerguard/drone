@@ -1,8 +1,8 @@
-# Dreamliner
+# Drone
 
 ### [The Register-Guard](http://registerguard.com)'s 3rd party sub-theme.
 
-![Dreamliner cockpit](drone.jpg)
+![Drone](drone.jpg)
 
 ---
 
