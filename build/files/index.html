@@ -2,338 +2,24 @@
 <html>
 <head>
 	
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	include "_incl/head-meta.html"
 	
 	<title></title>
-	<meta name="description" content="#">
-	<meta name="keywords" content="#">
 	
-	<meta name="viewport" content="width=1020"> <!-- rgne.ws/11s95Qm -->
-	
-	<style type="text/css">
-		<!--
-			
-			/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
-			article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.67em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
-			
-			@font-face {
-				font-family: "RGWeb";
-				src: url("http://fonts.registerguard.com/rg/rgweb.eot");
-				src: url("http://fonts.registerguard.com/rg/rgweb.eot?#iefix") format("embedded-opentype"),
-					url("http://fonts.registerguard.com/rg/rgweb.woff") format("woff"),
-					url("http://fonts.registerguard.com/rg/rgweb.ttf") format("truetype"),
-					url("http://fonts.registerguard.com/rg/rgweb.svg#RGWeb") format("svg");
-				font-weight: normal;
-				font-style: normal;
-			}
-			
-			html,
-			body { background: #fff; }
-			
-			html {
-				height: 100%;
-				overflow-y: scroll;
-				-webkit-text-size-adjust: 100%;
-				-ms-text-size-adjust: 100%;
-			}
-			
-			body {
-				font: 100.01%/1.5 Cambria, Georgia, serif;;
-				color: #000;
-				-webkit-font-smoothing: antialiased;
-				        font-smoothing: antialiased;
-				text-rendering: optimizeLegibility;
-				min-height: 100%;
-				_height: 100%;
-			}
-			
-			::-moz-selection {
-				background: #64c9ff;
-				text-shadow: none;
-			}
-			
-			::selection {
-				background: #64c9ff;
-				text-shadow: none;
-			}
-			
-			a {
-				color: #000;
-				text-decoration: none;
-			}
-				a:visited { color: #333; }
-				a:visited:hover,
-				a:focus,
-				a:focus:hover,
-				a:hover,
-				a:active { color: #ae1a1f; }
-			
-			p {
-				font-family: Cambria, Georgia, serif;
-				font-size: .875em; /* 14px */
-				line-height: 1.28571428571428; /* (((1.5 / .875) = 1.71428571428571) * .75) = 1.28571428571428 */
-				margin: 0 0 10px;
-			}
-				p a {
-					color: #00517e;
-					text-decoration: none;
-				}
-				p a:visited { color: #00517e; }
-				p a:visited:hover,
-				p a:focus,
-				p a:focus:hover,
-				p a:hover,
-				p a:active {
-					color: #0083ca;
-					text-decoration: underline;
-				}
-			
-			/* Need to include default heading sizes! */
-			
-			/* Need to make easier to override width: */
-			.uav,
-			#uav_top,
-			#uav_middle,
-			#uav_bottom {
-				background: #fff;
-				margin: 0 auto;
-				width: 980px;
-			}
-			
-			#uav_top { padding-top: 10px; }
-			
-			#uav_bottom { padding-bottom: 10px; }
-			
-			#uav_header { *zoom: 1; } #uav_header:before, #uav_header:after { content: " "; display: table; } #uav_header:after { clear: both; }
-			#uav_header {
-				position: relative;
-				margin-bottom: 10px;
-			}
-			
-			#uav_flag {
-				font: 2.5em "RGWeb", Cambria, Georgia, serif; /* 40px */
-				line-height: 1.2; /* 3em / 2.5 = 1.2 */
-				color: #000;
-				margin: 0;
-				white-space: nowrap;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-				#uav_flag a,
-				#uav_flag a:visited,
-				#uav_flag a:visited:hover,
-				#uav_flag a:focus,
-				#uav_flag a:focus:hover,
-				#uav_flag a:hover,
-				#uav_flag a:active {
-					color: #000;
-					text-decoration: none;
-				}
-			
-			#uav_global { *zoom: 1; } #uav_global:before, #uav_global:after { content: " "; display: table; } #uav_global:after { clear: both; }
-			#uav_global,
-			#uav_global li {
-				margin: 0;
-				padding: 0;
-			}
-			#uav_global {
-				font: .813em Arial, sans-serif; /* 13px */
-				line-height: 3.690036900369;
-				text-transform: uppercase;
-				list-style: none;
-				margin-left: -20px;
-				display: block;
-			}
-				#uav_global li {
-					margin-left: 20px;
-					float: right;
-					display: inline;
-				}
-				#uav_global li a {
-					color: #000;
-					text-decoration: none;
-				}
-				#uav_global li a:visited { color: #000; }
-				#uav_global li a:visited:hover,
-				#uav_global li a:focus,
-				#uav_global li a:focus:hover,
-				#uav_global li a:hover,
-				#uav_global li a:active {
-					color: #000;
-					text-decoration: underline;
-				}
-			
-			#uav_navigation { *zoom: 1; } #uav_navigation:before, #uav_navigation:after { content: " "; display: table; } #uav_navigation:after { clear: both; }
-			#uav_navigation {
-				font-family: Arial, sans-serif;
-				font-size: 1em;
-				line-height: 1.5em;
-			}
-			
-			/* Structure: */
-			#uav_links,
-			#uav_links li {
-				margin: 0;
-				padding: 0;
-			}
-			#uav_links {
-				list-style: none;
-				float: left;
-				display: inline;
-				width: 100%;
-			}
-				#uav_links li {
-					float: left;
-					display: inline;
-				}
-				#uav_links li:last-child { float: right; }
-					#uav_links li a { display: block; }
-			/* Skin: */
-			#uav_links { background-color: #000; }
-				#uav_links li {}
-					#uav_links li a {
-						letter-spacing: .05em;
-						text-decoration: none;
-						border-width: 1px 1px 0;
-						border-style: solid;
-						border-color: #000;
-						background-color: #000;
-						padding: 10px;
-					}
-					#uav_links li a,
-					#uav_links li a:visited { color: #fff; }
-					#uav_links li a:visited:hover,
-					#uav_links li a:focus,
-					#uav_links li a:focus:hover,
-					#uav_links li a:hover,
-					#uav_links li a:active { 
-						text-decoration: none;
-						border-color: #ae1b1f;
-						background-color: #ae1b1f;
-						outline: 0;
-					}
-			
-			#uav_footer {
-				border-top: 1px solid #ccc;
-				margin: 0 0 10px;
-				padding: 10px 0;
-				position: relative;
-			}
-				#uav_footer p {
-					font: .688em/2.18023255813953 Arial, sans-serif; /* 11px */
-					text-transform: uppercase;
-					letter-spacing: .05em;
-					color: #999;
-					margin: 0;
-					padding: 0;
-				}
-				#uav_footer a {
-					color: #666;
-					text-decoration: none;
-				}
-				#uav_footer a:visited { color: #666; }
-				#uav_footer a:visited:hover,
-				#uav_footer a:focus,
-				#uav_footer a:focus:hover,
-				#uav_footer a:hover,
-				#uav_footer a:active {
-					color: #000;
-					text-decoration: underline;
-				}
-			
-			.uav_banner { padding: 10px 0; }
-				#uav_top .uav_banner { border-bottom: 1px solid #ccc; }
-				#uav_bottom .uav_banner { border-top: 1px solid #ccc; }
-			
-			/* http://projects.registerguard.com/pages/templates/ap/hosted2/ */
-			.uav_layout { background: url(bg-01.gif) repeat-y right top; } /* This could use some more thought. CSS3 vertical rule gradient might be nice. */
-				.uav_wrapper { *zoom: 1; } .uav_wrapper:before, .uav_wrapper:after { content: " "; display: table; } .uav_wrapper:after { clear: both; }
-				.uav_wrapper { margin-right: 340px; }
-					.uav_wrapper .uav_primary {
-						float: left;
-						width: 100%;
-						position: relative;
-					}
-					.uav_wrapper .uav_secondary {
-						width: 300px;
-						margin-right: -340px;
-						*margin-left: 40px; /* For some reason, this makes IE6 (and IE7?) look like other browsers (need to confirm this). */
-						float: right;
-						position: relative;
-					}
-			
-			.uav_fix { *zoom: 1; } .uav_fix:before, .uav_fix:after { content: " "; display: table; } .uav_fix:after { clear: both; }
-			
-			/*--------------------------------------------------------------------*/
-			
-			/* Temp until we can figure out where to put non-responsive advert CSS. */
-			.advert {
-				text-align: center;
-				position: relative;
-				margin: 0 auto;
-			}
-				.advert * {
-					font-size: 100%;
-					font: inherit;
-					border: 0;
-					margin: 0 auto;
-					padding: 0;
-					outline: 0;
-				}
-				.advert iframe { display: block; }
-			
-		-->
-	</style>
+	include "_incl/head-styles.html"
 	
 </head>
 <body>
 
 <div id="uav_top">
 	
-	<div id="uav_header">
-		
-		<h6 id="uav_flag"><a href="http://registerguard.com/">The Register-Guard</a></h6>
-		
-		<ul id="uav_global">
-			<li><a href="http://services.registerguard.com/">Subscriber Services</a></li>
-			<li><a href="http://registerguard.com/homes">Homes</a></li>
-			<li><a href="http://registerguard.com/autos">Autos</a></li>
-			<li><a href="http://registerguard.com/jobs">Jobs</a></li>
-			<li><a href="http://registerguard.ca.kaango.com/">Classified</a></li>
-			<li><a href="http://registerguard.com/">Home</a></li>
-		</ul> <!-- /#uav_global -->
-		
-	</div> <!-- /#uav_header -->
+	include "_incl/top-header.html"
 	
-	<div id="uav_navigation">
-		
-		<ul id="uav_links">
-			<li><a href="http://registerguard.com/">News</a></li>
-			<li><a href="http://registerguard.com/rg/sports/">Sports</a></li>
-			<li><a href="http://registerguard.com/rg/business/">Business</a></li>
-			<li><a href="http://registerguard.com/rg/opinion/">Opinion</a></li>
-			<li><a href="http://registerguard.com/rg/life/">Life</a></li>
-			<li><a href="http://registerguard.com/rg/entertainment/">Entertainment</a></li>
-			<li><a href="http://registerguard.com/rg/news/obituaries/">Obits</a></li>
-			<li><a href="http://blogs.registerguard.com/">Blogs</a></li>
-			<li><a href="#">Marketplace</a></li>
-			<li><a href="http://projects.registerguard.com/pages/search/">Search</a></li>
-		</ul> <!-- /#uav_links -->
-		
-	</div> <!-- /#uav_navigation -->
+	include "_incl/top-navigation.html"
 	
-	<div class="uav_banner">
-		
-		<!-- //////////////////// LEADERBOARD TOP \\\\\\\\\\\\\\\\\\\\ -->
-		
-		<div class="advert"><p>Advertisement here ...</p><script type="text/javascript">/* ... OpenX JS goes here ... */</script></div>
-		
-		<!-- \\\\\\\\\\\\\\\\\\\\ LEADERBOARD TOP //////////////////// -->
-		
-	</div> <!-- /.uav_banner -->
+	include "_incl/top-leaderboard.html"
 	
-</div> <!-- /#uav_header -->
+</div> <!-- /#uav_top -->
 
 <div id="uav_middle">
 	
@@ -361,39 +47,13 @@
 
 <div id="uav_bottom">
 	
-	<div class="uav_banner">
-		
-		<!-- //////////////////// LEADERBOARD TOP \\\\\\\\\\\\\\\\\\\\ -->
-		
-		<div class="advert"><p>Advertisement here ...</p><script type="text/javascript">/* ... OpenX JS goes here ... */</script></div>
-		
-		<!-- \\\\\\\\\\\\\\\\\\\\ LEADERBOARD TOP //////////////////// -->
-		
-	</div> <!-- /.uav_banner -->
+	include "_incl/bottom-leaderboard.html"
 	
-	<div id="uav_footer">
-		
-		<p>The Register-Guard &bull; <a href="http://g.co/maps/h6sgk">3500 Chad Drive</a> &bull; Eugene, OR &bull; 97408 / (541) 485-1234 / <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#114;&#101;&#103;&#105;&#115;&#116;&#101;&#114;&#103;&#117;&#97;&#114;&#100;&#46;&#99;&#111;&#109;'>&#70;&#101;&#101;&#100;&#98;&#97;&#99;&#107;</a></p>
-		
-		<p>Copyright &copy; 1996–2013 / <a href="http://projects.registerguard.com/pages/terms-of-use/">Terms</a> / <a href="http://projects.registerguard.com/pages/privacy-statement/">Privacy</a> / <a href="http://projects.registerguard.com/pages/copyright/">Copyright</a></p>
-		
-	</div> <!-- /#uav_footer -->
+	include "_incl/bottom-footer.html"
 	
 </div> <!-- /#uav_bottom -->
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-	<!--
-		
-		$(document).ready(function() {
-			
-			
-			
-		});
-		
-	//-->
-</script>
+include "_incl/scripts.html"
 
 </body>
 </html>
