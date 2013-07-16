@@ -40,3 +40,4 @@ Thumbs.db
 
 # Project-specific #
 ####################
+build/node_modules
