@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 		pkg : grunt.file.readJSON('package.json'),
 		
 		/* ############################################################
-		   WATCH
+		   Watch
 		   ############################################################ */
 			
 			/**
@@ -27,8 +27,7 @@ module.exports = function(grunt) {
 					
 					files : [
 						
-						'./src/jquery.<%= pkg.name %>.js',
-						'../demo/**/*'
+						'./src/jquery.<%= pkg.name %>.js'
 						
 					],
 					
@@ -56,15 +55,9 @@ module.exports = function(grunt) {
 					
 				},
 				
-				adicio : [
+				src : [
 					
-					'../adicio/**/*'
-					
-				],
-				
-				legacy : [
-					
-					'../legacy/**/*'
+					'../<%= pkg.name %>/**/*'
 					
 				]
 				
@@ -85,25 +78,7 @@ module.exports = function(grunt) {
 				files: {
 					
 					src: 'index.html',
-					dest: '../',
-					flatten: true,
-					cwd: './files/'
-					
-				},
-				
-				adicio : {
-					
-					src: 'adicio/*.html',
-					dest: '../adicio',
-					flatten: true,
-					cwd: './files/'
-					
-				},
-				
-				legacy : {
-					
-					src: 'legacy/*.html',
-					dest: '../legacy',
+					dest: '../<%= pkg.name %>/',
 					flatten: true,
 					cwd: './files/'
 					
@@ -112,7 +87,7 @@ module.exports = function(grunt) {
 			},
 			
 		/* ############################################################
-		   Copy
+		   03 - Copy
 		   ############################################################ */
 			
 			/**
@@ -128,25 +103,8 @@ module.exports = function(grunt) {
 					
 					expand : true,
 					cwd : './files/',
-					src : 'bg-01.gif',
-					dest : '../adicio/'
-					
-				},
-				
-				adicio : {
-					
-					files : [
-						
-						{
-							
-							expand : true,
-							cwd : './files/',
-							src : 'bg-01.gif',
-							dest : '../adicio/'
-							
-						}
-						
-					]
+					src : '*.gif',
+					dest : '../<%= pkg.name %>/'
 					
 				}
 				
@@ -166,8 +124,6 @@ module.exports = function(grunt) {
 	
 	//----------------------------------
 	
-	grunt.registerTask('adicio', ['clean:adicio', 'includes:adicio', 'copy']);
-	
-	grunt.registerTask('legacy', ['clean:legacy', 'includes:legacy', 'copy']);
+	grunt.registerTask('default', ['clean', 'includes', 'copy']);
 	
 };
