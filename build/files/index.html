@@ -2,22 +2,20 @@
 <html>
 <head>
 	
-	include "head-meta.html"
+	@@include('head-meta.html', {"name" : "drone DEMO"})
 	
-	<title></title>
-	
-	include "head-styles.html"
+	@@include('head-styles.html', {"bgurl" : "bg-01.gif"})
 	
 </head>
 <body>
 
 <div id="uav_top">
 	
-	include "top-header.html"
+	@@include('top-header.html')
 	
-	include "top-navigation.html"
+	@@include('top-navigation.html')
 	
-	include "top-leaderboard.html"
+	@@include('top-leaderboard.html', {"adid" : "5551234", "random" : "<%= now %>"})
 	
 </div> <!-- /#uav_top -->
 
@@ -47,13 +45,13 @@
 
 <div id="uav_bottom">
 	
-	include "bottom-leaderboard.html"
+	@@include('bottom-leaderboard.html', {"adid" : "5551235", "random" : "<%= now %>"})
 	
-	include "bottom-footer.html"
+	@@include('bottom-footer.html')
 	
 </div> <!-- /#uav_bottom -->
 
-include "scripts.html"
+@@include('scripts.html')
 
 </body>
 </html>
