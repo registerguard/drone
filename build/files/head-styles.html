@@ -238,12 +238,14 @@
 		.uav_layout { background: url(@@bgurl) repeat-y right top; } /* This could use some more thought. CSS3 vertical rule gradient might be nice. */
 			.uav_wrapper { *zoom: 1; } .uav_wrapper:before, .uav_wrapper:after { content: " "; display: table; } .uav_wrapper:after { clear: both; }
 			.uav_wrapper { margin-right: 340px; }
-				.uav_wrapper .uav_primary {
+				.uav_wrapper .uav_primary,
+				.uav_primary {
 					float: left;
 					width: 100%;
 					position: relative;
 				}
-				.uav_wrapper .uav_secondary {
+				.uav_wrapper .uav_secondary,
+				.uav_secondary {
 					width: 300px;
 					margin-right: -340px;
 					*margin-left: 40px; /* For some reason, this makes IE6 (and IE7?) look like other browsers (need to confirm this). */
