@@ -70,6 +70,50 @@
 				text-decoration: underline;
 			}
 		
+		/* ############################################################
+		   Bulldog styles (will include as a build import when that's setup)
+		   ############################################################ */
+			ul, ol, dl { margin: 0 0 10px; }
+				dl dt { font-weight: bold; }
+				ul ul,
+				ul ol,
+				ul dl,
+				ol ul,
+				ol ol,
+				ol dl,
+				dl ol,
+				dl ul {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+					ul li,
+					dl dd { margin-left: 2em; }
+					ol li { margin-left: 2.5em; } /* Need a bit more elbow room for the higher numbers. */
+			
+			/* ==============================
+			   List3 style
+			   ============================== */
+				.li3,
+				.li3 li {
+					margin: 0;
+					padding: 0;
+				}
+					.li3 {
+						list-style: none;
+						font-size: 1em;
+						line-height: 1.5em;
+						margin: 0 0 10px;
+					}
+						.li3 li {
+							border-width: 1px 0;
+							border-style: solid;
+							border-color: #ddd;
+							margin: -1px 0 0;
+							padding: 5px 0;
+						}
+						.li3 li:first-child { border-top: none; }
+						.li3 li:last-child { border-bottom: none; }
+		
 		/* Need to include default heading sizes! */
 		
 		/* Need to make easier to override width: */
