@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 					
 					files : [
 						
-						'./src/jquery.<%= pkg.name %>.js'
+						'./files/**/*'
 						
 					],
 					

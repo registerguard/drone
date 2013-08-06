@@ -14,6 +14,8 @@
 	<style type="text/css">
 	<!--
 		
+		
+		
 		/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
 		article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.67em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 		
@@ -62,12 +64,15 @@
 			color: #000;
 			text-decoration: none;
 		}
-			a:visited { color: #333; }
+			/*These are normally inserted as a <style> block in the head,
+			so they override more specific styles from another sheet:*/
+			
+			/*a:visited { color: #333; }
 			a:visited:hover,
 			a:focus,
 			a:focus:hover,
 			a:hover,
-			a:active { color: #ae1a1f; }
+			a:active { color: #ae1a1f; }*/
 		
 		p {
 			font-family: Cambria, Georgia, serif;
@@ -96,12 +101,15 @@
 		#uav_top,
 		#uav_middle,
 		#uav_bottom {
+			position: relative;
 			background: #fff;
 			margin: 0 auto;
 			width: 980px;
 		}
 		
 		#uav_top { padding-top: 10px; }
+		
+		#uav_middle { padding-top: 20px; padding-bottom: 20px; }
 		
 		#uav_bottom { padding-bottom: 10px; }
 		
@@ -248,20 +256,28 @@
 			#uav_bottom .uav_banner { border-top: 1px solid #ccc; }
 		
 		/* http://projects.registerguard.com/pages/templates/ap/hosted2/ */
-		.uav_layout { background: url(bg-01.gif) repeat-y right top; } /* This could use some more thought. CSS3 vertical rule gradient might be nice. */
-			.uav_wrapper { *zoom: 1; } .uav_wrapper:before, .uav_wrapper:after { content: " "; display: table; } .uav_wrapper:after { clear: both; }
-			.uav_wrapper { margin-right: 340px; }
-				.uav_wrapper .uav_primary {
+		/* This could use some more thought. CSS3 vertical rule gradient might be nice. */
+		.uav_layout {
+			position: relative;
+			background: url(http://advertising.registerguard.com/assets/p/marketplace/img/bg-01.gif) repeat-y right top;
+		}
+			/*.uav_wrapper { *zoom: 1; } .uav_wrapper:before, .uav_wrapper:after { content: " "; display: table; } .uav_wrapper:after { clear: both; }
+			.uav_wrapper { margin-right: 340px; }*/
+			.uav_layout { *zoom: 1; } .uav_layout:before, .uav_layout:after { content: " "; display: table; } .uav_layout:after { clear: both; }
+			/*.uav_secondary { *zoom: 1; } .uav_secondary:before, .uav_secondary:after { content: " "; display: table; } .uav_secondary:after { clear: both; }*/
+				.uav_wrapper .uav_primary,
+				.uav_primary {
+					display: inline;
 					float: left;
-					width: 100%;
+					width: 640px;
 					position: relative;
 				}
-				.uav_wrapper .uav_secondary {
+				.uav_wrapper .uav_secondary,
+				.uav_secondary {
+					position: relative;
 					width: 300px;
-					margin-right: -340px;
 					*margin-left: 40px; /* For some reason, this makes IE6 (and IE7?) look like other browsers (need to confirm this). */
 					float: right;
-					position: relative;
 				}
 		
 		.uav_fix { *zoom: 1; } .uav_fix:before, .uav_fix:after { content: " "; display: table; } .uav_fix:after { clear: both; }
@@ -330,15 +346,15 @@
 	
 	<div class="advert">
 		
-		<script type="text/javascript">if (!window.OX_ads) { OX_ads = []; }OX_ads.push({ "auid" : "5551234" });</script>
+		<script type="text/javascript">if (!window.OX_ads) { OX_ads = []; }OX_ads.push({ "auid" : "304106" });</script>
 		<script type="text/javascript">document.write('<scr'+'ipt src="http://ox-d.registerguard.com/w/1.0/jstag"><\/scr'+'ipt>');</script>
 		<noscript>
 			
-			<iframe id="51fbdbb03f3c5" name="51fbdbb03f3c5" src="http://ox-d.registerguard.com/w/1.0/afr?auid=5551234&cb=20130802095640" frameborder="0" scrolling="no" width="728" height="90">
+			<iframe id="51fbdbb03f3c5" name="51fbdbb03f3c5" src="http://ox-d.registerguard.com/w/1.0/afr?auid=304106&cb=20130805050517" frameborder="0" scrolling="no" width="728" height="90">
 				
-				<a href="http://ox-d.registerguard.com/w/1.0/rc?cs=51fbdbb03f3c5&cb=20130802095640" >
+				<a href="http://ox-d.registerguard.com/w/1.0/rc?cs=51fbdbb03f3c5&cb=20130805050517" >
 					
-					<img src="http://ox-d.registerguard.com/w/1.0/ai?auid=5551234&cs=51fbdbb03f3c5&cb=20130802095640" border="0" alt="">
+					<img src="http://ox-d.registerguard.com/w/1.0/ai?auid=304106&cs=51fbdbb03f3c5&cb=20130805050517" border="0" alt="">
 					
 				</a>
 				
@@ -360,21 +376,44 @@
 	
 	<div class="uav_layout">
 		
-		<div class="uav_wrapper">
+		<div class="uav_primary">
 			
-			<div class="uav_primary">
-				
-				<p>Primary</p>
-				
-			</div> <!-- /.uav_primary -->
+			<p>Primary</p>
+			<p>Primary</p>
+			<p>Primary</p>
+			<p>Primary</p>
 			
-			<div class="uav_secondary">
-				
-				<p>Secondary</p>
-				
-			</div> <!-- /.uav_secondary -->
+		</div> <!-- /.uav_primary -->
+		
+		<div class="uav_secondary">
 			
-		</div> <!-- /.uav_wrapper -->
+			<!-- //////////////////// MEDIUM RECTANGLE 1 \\\\\\\\\\\\\\\\\\\\ -->
+
+<div class="advert">
+	
+	<script type="text/javascript">if (!window.OX_ads) { OX_ads = []; }OX_ads.push({ "auid" : "304108" });</script>
+	<script type="text/javascript">document.write('<scr'+'ipt src="http://ox-d.registerguard.com/w/1.0/jstag"><\/scr'+'ipt>');</script>
+	<noscript>
+		
+		<iframe id="51fbdbb03f3c5" name="51fbdbb03f3c5" src="http://ox-d.registerguard.com/w/1.0/afr?auid=304108&cb=20130805050517" frameborder="0" scrolling="no" width="728" height="90">
+			
+			<a href="http://ox-d.registerguard.com/w/1.0/rc?cs=51fbdbb03f3c5&cb=20130805050517" >
+				
+				<img src="http://ox-d.registerguard.com/w/1.0/ai?auid=304108&cs=51fbdbb03f3c5&cb=20130805050517" border="0" alt="">
+				
+			</a>
+			
+		</iframe>
+		
+	</noscript>
+	
+</div> <!-- /.advert -->
+
+<!-- \\\\\\\\\\\\\\\\\\\\ MEDIUM RECTANGLE 1 //////////////////// -->
+			
+			<p>Secondary</p>
+			
+		</div> <!-- /.uav_secondary -->
 		
 	</div> <!-- /.uav_layout -->
 	
@@ -388,15 +427,15 @@
 	
 	<div class="advert">
 		
-		<script type="text/javascript">if (!window.OX_ads) { OX_ads = []; }OX_ads.push({ "auid" : "5551235" });</script>
+		<script type="text/javascript">if (!window.OX_ads) { OX_ads = []; }OX_ads.push({ "auid" : "328209" });</script>
 		<script type="text/javascript">document.write('<scr'+'ipt src="http://ox-d.registerguard.com/w/1.0/jstag"><\/scr'+'ipt>');</script>
 		<noscript>
 			
-			<iframe id="51fbdbb03f3c5" name="51fbdbb03f3c5" src="http://ox-d.registerguard.com/w/1.0/afr?auid=5551235&cb=20130802095640" frameborder="0" scrolling="no" width="728" height="90">
+			<iframe id="51fbdbb03f3c5" name="51fbdbb03f3c5" src="http://ox-d.registerguard.com/w/1.0/afr?auid=328209&cb=20130805050517" frameborder="0" scrolling="no" width="728" height="90">
 				
-				<a href="http://ox-d.registerguard.com/w/1.0/rc?cs=51fbdbb03f3c5&cb=20130802095640" >
+				<a href="http://ox-d.registerguard.com/w/1.0/rc?cs=51fbdbb03f3c5&cb=20130805050517" >
 					
-					<img src="http://ox-d.registerguard.com/w/1.0/ai?auid=5551235&cs=51fbdbb03f3c5&cb=20130802095640" border="0" alt="">
+					<img src="http://ox-d.registerguard.com/w/1.0/ai?auid=328209&cs=51fbdbb03f3c5&cb=20130805050517" border="0" alt="">
 					
 				</a>
 				
