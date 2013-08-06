@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 			init: {
 				
 				cwd: './files',
-				src : 'index.html',
+				src: ['index.html', 'index2.html'],
 				dest : '../<%= pkg.name %>',
 				expand: true
 				
@@ -89,29 +89,6 @@ module.exports = function(grunt) {
 			
 		},
 		
-		/* ############################################################
-		   02 - Includes
-		   ############################################################ */
-			
-			/**
-			 * Include other files, like php `include`.
-			 *
-			 * @see https://github.com/vanetix/grunt-includes
-			 */
-			
-			includes: {
-				
-				files: {
-					
-					src: 'index.html',
-					dest: '../<%= pkg.name %>/',
-					flatten: true,
-					cwd: './files/'
-					
-				}
-				
-			},
-			
 		/* ############################################################
 		   03 - Copy
 		   ############################################################ */
