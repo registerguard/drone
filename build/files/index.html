@@ -2,22 +2,28 @@
 <html>
 <head>
 	
-	include "head-meta.html"
+	@@include('head-meta.html', {"name" : "drone DEMO"})
 	
-	<title></title>
-	
-	include "head-styles.html"
+	<style type="text/css">
+		
+		<!--
+			
+			@@include('styles.css', {"bgurl" : "http://advertising.registerguard.com/assets/p/marketplace/img/bg-01.gif"})
+			
+		-->
+		
+	</style>
 	
 </head>
 <body>
 
 <div id="uav_top">
 	
-	include "top-header.html"
+	@@include('top-header.html')
 	
-	include "top-navigation.html"
+	@@include('top-navigation.html')
 	
-	include "top-leaderboard.html"
+	@@include('top-leaderboard.html', {"adid" : "304106", "random" : "<%= now %>"})
 	
 </div> <!-- /#uav_top -->
 
@@ -29,11 +35,25 @@
 			
 			<div class="uav_primary">
 				
-				<p>Primary</p>
+				<table>
+					
+					<tr>
+						
+						<td>
+							
+							<!-- Note: The table is only for Adicio hosted templates. CONTENT HERE -->
+							
+						</td>
+						
+					</tr>
+					
+				</table>
 				
 			</div> <!-- /.uav_primary -->
 			
 			<div class="uav_secondary">
+				
+				@@include('medium-rectangle.html', {"adid" : "304108", "random" : "<%= now %>"})
 				
 				<p>Secondary</p>
 				
@@ -43,17 +63,17 @@
 		
 	</div> <!-- /.uav_layout -->
 	
-</div> <!-- /#uav_main -->
+</div> <!-- /#uav_middle -->
 
 <div id="uav_bottom">
 	
-	include "bottom-leaderboard.html"
+	@@include('bottom-leaderboard.html', {"adid" : "328209", "random" : "<%= now %>"})
 	
-	include "bottom-footer.html"
+	@@include('bottom-footer.html')
 	
 </div> <!-- /#uav_bottom -->
 
-include "scripts.html"
+@@include('scripts.html')
 
 </body>
 </html>

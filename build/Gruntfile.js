@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 					
 					files : [
 						
-						'./src/jquery.<%= pkg.name %>.js'
+						'./files/**/*'
 						
 					],
 					
@@ -63,29 +63,30 @@ module.exports = function(grunt) {
 				
 			},
 		
-		/* ############################################################
-		   02 - Includes
-		   ############################################################ */
+	/* ############################################################
+	   02 - Include Replace
+	   ############################################################ */
+		
+		/**
+		 * Include other files, but with variables in said files,
+		 * like php `include`.
+		 *
+		 * @see https://github.com/alanshaw/grunt-include-replace
+		 */
+		
+		includereplace: {
 			
-			/**
-			 * Include other files, like php `include`.
-			 *
-			 * @see https://github.com/vanetix/grunt-includes
-			 */
-			
-			includes: {
+			init: {
 				
-				files: {
-					
-					src: 'index.html',
-					dest: '../<%= pkg.name %>/',
-					flatten: true,
-					cwd: './files/'
-					
-				}
+				cwd: './files',
+				src: 'index.html',
+				dest : '../<%= pkg.name %>',
+				expand: true
 				
-			},
+			}
 			
+		},
+		
 		/* ############################################################
 		   03 - Copy
 		   ############################################################ */
@@ -118,12 +119,12 @@ module.exports = function(grunt) {
 	
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	
-	grunt.loadNpmTasks('grunt-includes');
+	grunt.loadNpmTasks('grunt-include-replace');
 	
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	
 	//----------------------------------
 	
-	grunt.registerTask('default', ['clean', 'includes', 'copy']);
+	grunt.registerTask('default', ['clean', 'includereplace', 'copy']);
 	
 };
