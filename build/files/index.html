@@ -31,26 +31,39 @@
 	
 	<div class="uav_layout">
 		
-		<div class="uav_primary">
+		<div class="uav_wrapper">
 			
-			<p>Primary</p>
-			<p>Primary</p>
-			<p>Primary</p>
-			<p>Primary</p>
+			<div class="uav_primary">
+				
+				<table>
+					
+					<tr>
+						
+						<td>
+							
+							<!-- Note: The table is only for Adicio hosted templates. CONTENT HERE -->
+							
+						</td>
+						
+					</tr>
+					
+				</table>
+				
+			</div> <!-- /.uav_primary -->
 			
-		</div> <!-- /.uav_primary -->
-		
-		<div class="uav_secondary">
+			<div class="uav_secondary">
+				
+				@@include('medium-rectangle.html', {"adid" : "304108", "random" : "<%= now %>"})
+				
+				<p>Secondary</p>
+				
+			</div> <!-- /.uav_secondary -->
 			
-			@@include('medium-rectangle.html', {"adid" : "304108", "random" : "<%= now %>"})
-			
-			<p>Secondary</p>
-			
-		</div> <!-- /.uav_secondary -->
+		</div> <!-- /.uav_wrapper -->
 		
 	</div> <!-- /.uav_layout -->
 	
-</div> <!-- /#uav_main -->
+</div> <!-- /#uav_middle -->
 
 <div id="uav_bottom">
 	

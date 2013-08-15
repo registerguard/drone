@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 			init: {
 				
 				cwd: './files',
-				src: ['index.html', 'index2.html'],
+				src: 'index.html',
 				dest : '../<%= pkg.name %>',
 				expand: true
 				
