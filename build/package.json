@@ -26,9 +26,9 @@
     "grunt": "0.4.1",
     "grunt-contrib-watch": "0.3.1",
     "grunt-contrib-clean": "0.4.1",
-    "grunt-contrib-copy": "0.4.1"
+    "grunt-contrib-copy": "0.4.1",
+    "grunt-include-replace": "1.1.0"
   },
   "devDependencies": {
-    "grunt-includes": "~0.2.4"
   }
 }
