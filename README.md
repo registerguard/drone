@@ -14,8 +14,6 @@ Nine times out of ten, 3rd party websites are unpredictable and they're almost a
 
 #### FEATURES
 
-Blah blah, here's yadda information for xyz:
-
 * HTML4 strict (a lot of 3rd parties will frack with DTD, and I have yet to see any that use an HTML5 document type.)
 * Simple CSS/HTML.
 * Basic styling of core elements.
@@ -25,11 +23,26 @@ Blah blah, here's yadda information for xyz:
 
 ---
 
-#### DEMO
+#### CLIENT-SPECIFIC DETAILS
 
-DEVELOPMENT | PRODUCTION
-:-: | :-:
-[![qr code](http://chart.apis.google.com/chart?cht=qr&chl=https://github.com/registerguard/drone/&chs=240x240)](http://registerguard.github.io/drone/build/files/) | (coming soon)
+**Adicio:**
+1. Using a `<table>` to wrap the `primary` content (*this should not harm other 3rd parties, so is built into the default*)
+
+
+```html
+<table>
+	<tr>
+		<td>
+			<!-- Note: The table is only for Adicio hosted templates. -->
+		</td>
+	</tr>
+</table>
+```
+
+
+---
+
+#### [DEMO](http://registerguard.github.io/drone/drone/)
 
 ---
 
