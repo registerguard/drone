@@ -1,0 +1,21 @@
+/**
+ * Drone
+ * The Register-Guard's 3rd party sub-theme.
+ *
+ * @author Rob Denton
+ * @link http://registerguard.com
+ * @docs https://github.com/registerguard/drone
+ * @copyright Copyright (c) 2014 Rob Denton.
+ * @version 1.0.0
+ * @date 2014/06/04
+ */
+
+
+.foo {
+  font-size: smaller;
+  color: #333333;
+  border: 10px solid #666666;
+  margin: 50px;
+  padding: 100px;
+  display: block;
+}
