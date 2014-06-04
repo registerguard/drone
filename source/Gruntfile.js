@@ -348,7 +348,7 @@ module.exports = function(grunt) {
 	
 	grunt.registerTask('dev', ['init', 'env:dev', 'clean:dev', 'sass:dev', 'preprocess:dev', 'copy:dev',]);
 	
-	grunt.registerTask('prod', ['init', 'env:prod', 'clean:prod', 'sass:prod', 'preprocess:prod', 'copy:prod',]);
+	grunt.registerTask('prod', ['init', 'dev', 'env:prod', 'clean:prod', 'sass:prod', 'preprocess:prod', 'copy:prod',]);
 	
 	grunt.registerTask('default', ['dev',]);
 	
