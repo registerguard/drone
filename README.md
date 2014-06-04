@@ -1,6 +1,6 @@
-# Drone ([demo](http://registerguard.github.io/drone/))
+# Drone
 
-### [The Register-Guard](http://registerguard.com)'s 3rd party sub-theme.
+### [The Register-Guard](http://registerguard.com)’s 3rd party sub-theme.
 
 ![Drone](drone.jpg)
 
@@ -8,7 +8,18 @@
 
 #### ABOUT
 
-Nine times out of ten, 3rd party websites are unpredictable and they're almost always inflexible. We've learned over the years that its best to have a super simple template for use within these systems. Yadda yadda yadda (I'll be back to clean up this verbiage later).
+3rd party websites are typically unpredictable, and they’re almost always inflexible. We’ve learned over the years that its best to have a super simple template for use within these systems. Yadda yadda yadda (I’ll be back to clean up this verbiage later).
+
+---
+
+#### Demo
+
+Click or scan:
+
+DEVELOPMENT | PRODUCTION
+:-: | :-:
+[![qr code](http://chart.apis.google.com/chart?cht=qr&chl=http://registerguard.github.io/drone/dev/&chs=240x240)](http://registerguard.github.io/drone/dev/) | [![qr code](http://chart.apis.google.com/chart?cht=qr&chl=http://registerguard.github.io/drone/prod/&chs=240x240)](http://registerguard.github.io/drone/prod/)
+`$ grunt` | `$ grunt prod`
 
 ---
 
@@ -21,7 +32,7 @@ Nine times out of ten, 3rd party websites are unpredictable and they're almost a
 * Easy to change container width.
 * Namespaced.
 
-**Important:** This theme's sole purpose is to wrap 3rd party conent. If one needs to include additional styles, for additional "theme" styles, then one should include/organize/version those via other means.
+**Important:** This theme’s sole purpose is to wrap 3rd party conent. If one needs to include additional styles, for additional “theme” styles, then one should include/organize/version those via other means.
 
 ---
 
