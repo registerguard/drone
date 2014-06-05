@@ -1,0 +1,89 @@
+.uav {
+	margin: 0 auto;
+	width: 980px; // Override to suit.
+}
+
+.uav_layout {
+	
+	// Layout markup:
+	//
+	// <div class="uav_layout">
+	//     <div class="uav_wrapper">
+	//         <div class="uav_primary">
+	//             <p>Primary</p>
+	//         </div>
+	//         <div class="uav_secondary">
+	//             <p>Secondary</p>
+	//         </div>
+	//     </div>
+	// </div>
+	//
+	// @see http://projects.registerguard.com/pages/templates/ap/hosted2/
+	
+	background: url(../images/faux.gif) repeat-y right top;
+	
+	.uav_wrapper {
+		@extend %uav_fix;
+		margin-right: 340px;
+	}
+	
+	.uav_primary {
+		float: left;
+		width: 100%;
+		position: relative;
+	}
+	
+	.uav_secondary {
+		width: 300px;
+		margin-right: -340px;
+		*margin-left: 40px; // For some reason, this makes IE6 (and IE7?) look like other browsers (need to confirm this).
+		float: right;
+		position: relative;
+	}
+	
+}
+
+#uav_top { padding-top: 10px; }
+
+#uav_bottom { padding-bottom: 10px; }
+
+#uav_header {
+	@extend %uav_fix;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+#uav_footer {
+	
+	border-top: 1px solid #ccc;
+	margin: 0 0 10px;
+	padding: 10px 0;
+	position: relative;
+	
+	p {
+		font: .688em/2.18023255813953 Arial, sans-serif; /* 11px */
+		text-transform: uppercase;
+		letter-spacing: .05em;
+		color: #999;
+		margin: 0;
+		padding: 0;
+	}
+	
+	a {
+		
+		color: #666;
+		text-decoration: none;
+		
+		&:visited { color: #666; }
+		&:visited:hover,
+		&:focus,
+		&:focus:hover,
+		&:hover,
+		&:active {
+			color: #000;
+			text-decoration: underline;
+		}
+		
+	}
+	
+}

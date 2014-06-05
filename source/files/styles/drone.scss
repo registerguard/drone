@@ -1,8 +1,8 @@
-// Helpers:
-@import "partials/variables";
-
-// Core:
-@import "partials/base";
-
-// To be sorted:
-@import "partials/pending";
+@import "partials/variables",
+        "partials/utility",
+        "partials/base",
+        "partials/layout",
+        "partials/navigation",
+        "partials/advertising",
+        "partials/branding",
+        "partials/pending";

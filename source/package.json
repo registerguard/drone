@@ -9,7 +9,7 @@
     "url": "git://github.com/registerguard/drone.git"
   },
   "author": {
-    "name": "Rob Denton",
+    "name": "The Register-Guard",
     "url": "http://registerguard.com"
   },
   "production": "http://static.registerguard.com/v5/drone/prod",

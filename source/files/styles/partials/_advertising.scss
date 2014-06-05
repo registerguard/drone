@@ -1,0 +1,31 @@
+.uav_banner {
+	
+	padding: 10px 0;
+	
+	#uav_top & { border-bottom: 1px solid #ccc; }
+	
+	#uav_bottom & { border-top: 1px solid #ccc; }
+	
+}
+
+.uav_advert {
+	
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	
+	* {
+		font: inherit {
+			size: 100%;
+		}
+		border: 0;
+		margin: 0 auto;
+		padding: 0;
+		outline: 0;
+	}
+	
+	img,
+	object,
+	iframe { display: block; }
+	
+}

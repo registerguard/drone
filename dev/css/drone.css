@@ -2,35 +2,68 @@
  * Drone
  * The Register-Guard's 3rd party sub-theme.
  *
- * @author Rob Denton
+ * @author The Register-Guard
  * @link http://registerguard.com
  * @docs https://github.com/registerguard/drone
- * @copyright Copyright (c) 2014 Rob Denton.
+ * @copyright Copyright (c) 2014 The Register-Guard.
  * @version 1.0.0
  * @date 2014/06/04
  */
 
 
-@font-face {
-  font-family: "RGWeb";
-  src: url("http://fonts.registerguard.com/rg/rgweb.eot");
-  src: url("http://fonts.registerguard.com/rg/rgweb.eot?#iefix") format("embedded-opentype"), url("http://fonts.registerguard.com/rg/rgweb.woff") format("woff"), url("http://fonts.registerguard.com/rg/rgweb.ttf") format("truetype"), url("http://fonts.registerguard.com/rg/rgweb.svg#RGWeb") format("svg");
-  font-weight: normal;
-  font-style: normal;
+.uav_layout .uav_wrapper, #uav_header, #uav_global, #uav_navigation,
+.uav_fix {
+  *zoom: 1;
 }
+.uav_layout .uav_wrapper:before, #uav_header:before, #uav_global:before, #uav_navigation:before, .uav_layout .uav_wrapper:after, #uav_header:after, #uav_global:after, #uav_navigation:after,
+.uav_fix:before,
+.uav_fix:after {
+  content: " ";
+  display: table;
+}
+.uav_layout .uav_wrapper:after, #uav_header:after, #uav_global:after, #uav_navigation:after,
+.uav_fix:after {
+  clear: both;
+}
+
+#uav_firewall {
+  border-collapse: collapse;
+}
+#uav_firewall .uav_firewall-dmz {
+  border: none;
+}
+
+.uav_wrap {
+  padding: 10px 0;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-.uav,
-#uav_top,
-#uav_middle,
-#uav_bottom {
-  position: relative;
-  background: #fff;
+.uav {
   margin: 0 auto;
   width: 980px;
+}
+
+.uav_layout {
+  background: url(../images/faux.gif) repeat-y right top;
+}
+.uav_layout .uav_wrapper {
+  margin-right: 340px;
+}
+.uav_layout .uav_primary {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.uav_layout .uav_secondary {
+  width: 300px;
+  margin-right: -340px;
+  *margin-left: 40px;
+  float: right;
+  position: relative;
 }
 
 #uav_top {
@@ -42,111 +75,65 @@ html {
 }
 
 #uav_header {
-  *zoom: 1;
-}
-
-#uav_header:before, #uav_header:after {
-  content: " ";
-  display: table;
-}
-
-#uav_header:after {
-  clear: both;
-}
-
-#uav_header {
   position: relative;
   margin-bottom: 10px;
 }
 
-#uav_flag {
-  font: 2.5em "RGWeb", Cambria, Georgia, serif;
-  /* 40px */
-  line-height: 1.2;
-  /* 3em / 2.5 = 1.2 */
-  color: #000;
-  margin: 0;
-  white-space: nowrap;
-  position: absolute;
-  top: 0;
-  left: 0;
+#uav_footer {
+  border-top: 1px solid #cccccc;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  position: relative;
 }
-
-#uav_flag a,
-#uav_flag a:visited,
-#uav_flag a:visited:hover,
-#uav_flag a:focus,
-#uav_flag a:focus:hover,
-#uav_flag a:hover,
-#uav_flag a:active {
-  color: #000;
-  text-decoration: none;
-}
-
-#uav_global {
-  *zoom: 1;
-}
-
-#uav_global:before, #uav_global:after {
-  content: " ";
-  display: table;
-}
-
-#uav_global:after {
-  clear: both;
-}
-
-#uav_global,
-#uav_global li {
+#uav_footer p {
+  font: 0.688em/2.18023255813953 Arial, sans-serif;
+  /* 11px */
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #999;
   margin: 0;
   padding: 0;
 }
+#uav_footer a {
+  color: #666;
+  text-decoration: none;
+}
+#uav_footer a:visited {
+  color: #666;
+}
+#uav_footer a:visited:hover, #uav_footer a:focus, #uav_footer a:focus:hover, #uav_footer a:hover, #uav_footer a:active {
+  color: #000;
+  text-decoration: underline;
+}
 
 #uav_global {
-  font: .813em Arial, sans-serif;
+  font: 0.813em Arial, sans-serif;
   /* 13px */
-  line-height: 3.690036900369;
+  line-height: 40px;
   text-transform: uppercase;
   list-style: none;
   margin-left: -20px;
   display: block;
 }
-
+#uav_global, #uav_global li {
+  margin: 0;
+  padding: 0;
+}
 #uav_global li {
   margin-left: 20px;
   float: right;
   display: inline;
 }
-
 #uav_global li a {
   color: #000;
   text-decoration: none;
 }
-
 #uav_global li a:visited {
   color: #000;
 }
-
-#uav_global li a:visited:hover,
-#uav_global li a:focus,
-#uav_global li a:focus:hover,
-#uav_global li a:hover,
-#uav_global li a:active {
+#uav_global li a:visited:hover, #uav_global li a:focus, #uav_global li a:focus:hover, #uav_global li a:hover, #uav_global li a:active {
   color: #000;
   text-decoration: underline;
-}
-
-#uav_navigation {
-  *zoom: 1;
-}
-
-#uav_navigation:before, #uav_navigation:after {
-  content: " ";
-  display: table;
-}
-
-#uav_navigation:after {
-  clear: both;
 }
 
 #uav_navigation {
@@ -155,38 +142,31 @@ html {
   line-height: 1.5em;
 }
 
-/* Structure: */
-#uav_links,
-#uav_links li {
-  margin: 0;
-  padding: 0;
-}
-
 #uav_links {
   list-style: none;
   float: left;
   display: inline;
   width: 100%;
 }
-
+#uav_links,
+#uav_links li {
+  margin: 0;
+  padding: 0;
+}
 #uav_links li {
   float: left;
   display: inline;
 }
-
 #uav_links li:last-child {
   float: right;
 }
-
 #uav_links li a {
   display: block;
 }
 
-/* Skin: */
 #uav_links {
   background-color: #000;
 }
-
 #uav_links li a {
   letter-spacing: .05em;
   text-decoration: none;
@@ -196,129 +176,24 @@ html {
   background-color: #000;
   padding: 10px;
 }
-
-#uav_links li a,
-#uav_links li a:visited {
+#uav_links li a, #uav_links li a:visited {
   color: #fff;
 }
-
-#uav_links li a:visited:hover,
-#uav_links li a:focus,
-#uav_links li a:focus:hover,
-#uav_links li a:hover,
-#uav_links li a:active {
+#uav_links li a:visited:hover, #uav_links li a:focus, #uav_links li a:focus:hover, #uav_links li a:hover, #uav_links li a:active {
   text-decoration: none;
   border-color: #ae1b1f;
   background-color: #ae1b1f;
   outline: 0;
 }
 
-#uav_footer {
-  border-top: 1px solid #ccc;
-  margin: 0 0 10px;
-  padding: 10px 0;
-  position: relative;
-}
-
-#uav_footer p {
-  font: .688em/2.18023255813953 Arial, sans-serif;
-  /* 11px */
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  color: #999;
-  margin: 0;
-  padding: 0;
-}
-
-#uav_footer a {
-  color: #666;
-  text-decoration: none;
-}
-
-#uav_footer a:visited {
-  color: #666;
-}
-
-#uav_footer a:visited:hover,
-#uav_footer a:focus,
-#uav_footer a:focus:hover,
-#uav_footer a:hover,
-#uav_footer a:active {
-  color: #000;
-  text-decoration: underline;
-}
-
 .uav_banner {
   padding: 10px 0;
 }
-
 #uav_top .uav_banner {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
 }
-
 #uav_bottom .uav_banner {
-  border-top: 1px solid #ccc;
-}
-
-/* http://projects.registerguard.com/pages/templates/ap/hosted2/ */
-/* This could use some more thought. CSS3 vertical rule gradient might be nice. */
-.uav_layout {
-  position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: url(../images/bg-01.gif) repeat-y right top;
-}
-
-.uav_layout {
-  *zoom: 1;
-}
-
-.uav_layout:before, .uav_layout:after {
-  content: " ";
-  display: table;
-}
-
-.uav_layout:after {
-  clear: both;
-}
-
-.uav_primary {
-  display: inline;
-  float: left;
-  width: 640px;
-  min-height: 1050px;
-  position: relative;
-  /* So min-height jump isn't so abrupt: */
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-}
-
-.uav_secondary {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  min-height: 1050px;
-  padding-top: 20px;
-  *margin-left: 40px;
-  /* For some reason, this makes IE6 (and IE7?) look like other browsers (need to confirm this). */
-  float: right;
-}
-
-.uav_fix {
-  *zoom: 1;
-}
-
-.uav_fix:before, .uav_fix:after {
-  content: " ";
-  display: table;
-}
-
-.uav_fix:after {
-  clear: both;
+  border-top: 1px solid #cccccc;
 }
 
 .uav_advert {
@@ -326,26 +201,41 @@ html {
   position: relative;
   margin: 0 auto;
 }
-
 .uav_advert * {
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   border: 0;
   margin: 0 auto;
   padding: 0;
   outline: 0;
 }
-
 .uav_advert img,
 .uav_advert object,
 .uav_advert iframe {
   display: block;
 }
 
-#uav_firewall {
-  border-collapse: collapse;
+#uav_flag {
+  text-indent: -999em;
+  white-space: nowrap;
+  width: 290px;
+  height: 40px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
-
-#uav_firewall .uav_firewall-dmz {
-  border: none;
+#uav_flag a {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/flag.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+#uav_flag a:visited, #uav_flag a:visited:hover, #uav_flag a:focus, #uav_flag a:focus:hover, #uav_flag a:hover, #uav_flag a:active {
+  text-decoration: none;
+}
+#uav_flag a:active, #uav_flag a:focus {
+  outline: none;
 }

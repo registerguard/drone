@@ -84,7 +84,6 @@ module.exports = function(grunt) {
 			files : [
 				
 				'<%= jshint.init %>',
-				'./files/scripts/**/*',
 				'./files/styles/**/*',
 				'./files/templates/**/*',
 				
@@ -114,7 +113,6 @@ module.exports = function(grunt) {
 			init : [
 				
 				'./Gruntfile.js',
-				'./files/scripts/ghb.*.js',
 				
 			],
 			
@@ -295,7 +293,6 @@ module.exports = function(grunt) {
 				cwd : './files/',
 				src : [
 					'images/**/*',
-					'scripts/**/*',
 				],
 				dest : '../dev/',
 				
@@ -307,7 +304,6 @@ module.exports = function(grunt) {
 				cwd : './files/',
 				src : [
 					'images/**/*',
-					'!images/junk/**'
 				],
 				dest : '../prod/<%= pkg.version %>/<%= now %>/<%= ver %>/'
 				
