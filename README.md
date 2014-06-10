@@ -4,8 +4,6 @@
 
 **[The Register-Guard](http://registerguard.com)’s 3rd party sub-theme.**
 
----
-
 ## About
 
 At the RG, we’ve learned over the years that its best to have a super simple template for use with 3rd party systems.
@@ -22,6 +20,18 @@ At the RG, we’ve learned over the years that its best to have a super simple t
 ### Assumptions:
 
 This theme’s sole purpose is to wrap 3rd party conent. If one needs more project-specific CSS, for additional “theme” styles, then one should include/organize/version those via other means and link to this theme’s CSS via a style link in the `<head>`.
+
+### Ad stack:
+
+The Drone template uses the "Staging" OpenX ad group:
+
+Name | AUID
+:-: | :-:
+Leaderboard Top | `339799`
+Medium Rectangle 1 | `339801`
+Leaderboard Bottom | `328209`
+
+**Be sure to change this when applying template to 3rd party.**
 
 ## Demo
 
