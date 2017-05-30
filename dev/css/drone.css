@@ -5,9 +5,9 @@
  * @author The Register-Guard
  * @link http://registerguard.com
  * @docs https://github.com/registerguard/drone
- * @copyright Copyright (c) 2014 The Register-Guard.
+ * @copyright Copyright (c) 2017 The Register-Guard.
  * @version 1.0.0
- * @date 2014/06/09
+ * @date 2017/05/30
  */
 
 
@@ -80,13 +80,13 @@ html {
 }
 
 #uav_footer {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   margin: 0 0 10px;
   padding: 10px 0;
   position: relative;
 }
 #uav_footer p {
-  font: 0.688em/2.18023255813953 Arial, sans-serif;
+  font: .688em/2.18023255813953 Arial, sans-serif;
   /* 11px */
   text-transform: uppercase;
   letter-spacing: .05em;
@@ -107,7 +107,7 @@ html {
 }
 
 #uav_global {
-  font: 0.813em Arial, sans-serif;
+  font: .813em Arial, sans-serif;
   /* 13px */
   line-height: 40px;
   text-transform: uppercase;
@@ -134,6 +134,17 @@ html {
 #uav_global li a:visited:hover, #uav_global li a:focus, #uav_global li a:focus:hover, #uav_global li a:hover, #uav_global li a:active {
   color: #000;
   text-decoration: underline;
+}
+#uav_global li.uav_global_rev a {
+  color: #fff;
+  background: #4267b1;
+  padding: 5px;
+}
+#uav_global li.uav_global_rev a:visited {
+  color: #fff;
+}
+#uav_global li.uav_global_rev a:visited:hover, #uav_global li.uav_global_rev a:focus, #uav_global li.uav_global_rev a:focus:hover, #uav_global li.uav_global_rev a:hover, #uav_global li.uav_global_rev a:active {
+  color: #fff;
 }
 
 #uav_navigation {
@@ -190,10 +201,10 @@ html {
   padding: 10px 0;
 }
 #uav_top .uav_banner {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
 }
 #uav_bottom .uav_banner {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
 }
 
 .uav_advert {
@@ -239,3 +250,5 @@ html {
 #uav_flag a:active, #uav_flag a:focus {
   outline: none;
 }
+
+/*# sourceMappingURL=drone.css.map */

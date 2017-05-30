@@ -5,17 +5,19 @@
  * @author The Register-Guard
  * @link http://registerguard.com
  * @docs https://github.com/registerguard/drone
- * @copyright Copyright (c) 2014 The Register-Guard.
+ * @copyright Copyright (c) 2017 The Register-Guard.
  * @version 1.0.0
- * @date 2014/06/09
+ * @date 2017/05/30
  */
 
 
 .foo {
   font-size: smaller;
-  color: #333333;
-  border: 10px solid #666666;
+  color: #333;
+  border: 10px solid #666;
   margin: 50px;
   padding: 100px;
   display: block;
 }
+
+/*# sourceMappingURL=development.css.map */

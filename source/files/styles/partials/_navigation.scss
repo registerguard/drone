@@ -37,6 +37,23 @@
 			
 		}
 		
+		&.uav_global_rev a{
+			
+			color: #fff;
+			background: #4267b1;
+			padding: 5px;
+			
+			&:visited { color: #fff; }
+			&:visited:hover,
+			&:focus,
+			&:focus:hover,
+			&:hover,
+			&:active {
+				color: #fff;
+			}
+			
+		}
+		
 	}
 	
 }

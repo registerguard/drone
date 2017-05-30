@@ -107,6 +107,7 @@ module.exports = function(grunt) {
 			options : {
 				
 				jshintrc : '.jshintrc', // Defined options and globals.
+				reporterOutput: '', // See: https://github.com/jshint/jshint/issues/2922#issuecomment-219263558
 				
 			},
 			
